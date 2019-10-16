@@ -1,0 +1,1 @@
+# <a name="welcome-to-newart-test"></a><span data-ttu-id="f3663-101">Newart へようこそ</span><span class="sxs-lookup"><span data-stu-id="f3663-101">Welcome to newart-test!</span></span>
