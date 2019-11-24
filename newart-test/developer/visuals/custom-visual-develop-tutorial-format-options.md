@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2019
 ms.locfileid: "72424396"
 ---
-# <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>チュートリアル:Power BI ビジュアルへの書式設定オプションの追加
+# <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>チュートリアル: Power BI ビジュアルへの書式設定オプションの追加
 
 このチュートリアルでは、ビジュアルに共通プロパティを追加する方法について説明します。
 
@@ -121,15 +121,15 @@ ms.locfileid: "72424396"
 
 7. **visual.ts** ファイルを開きます。
 
-8. @No__t-0visual ファイルにあります。
+8. **visual.ts** ファイルで、
 
-    `VisualSettings` クラスのインポート
+    `VisualSettings` クラスをインポートし、
 
     ```typescript
     import { VisualSettings } from "./settings";
     ```
 
-    **Visual @ no__t クラスで、次のプロパティを追加します。
+    **Visual** クラスに次のプロパティを追加します。
 
     ```typescript
     private visualSettings: VisualSettings;
@@ -221,7 +221,7 @@ ms.locfileid: "72424396"
 
 6. **pbiviz.json** ファイルを保存します。
 
-7. **assets** オブジェクトのドキュメントでアイコンへのパスが定義されていることに注意してください。 このアイコンは、 **_[視覚化]_** ウィンドウに表示されるイメージです。 これは "*20 × 20 ピクセル*" の **PNG** ファイルにする必要があります。
+7. **assets** オブジェクトのドキュメントでアイコンへのパスが定義されていることに注意してください。 このアイコンは、 **_[視覚化]_** ウィンドウに表示されるイメージです。 これは "**20 × 20 ピクセル**" の *PNG* ファイルにする必要があります。
 
 8. エクスプローラーで icon.png ファイルをコピーして貼り付け、assets フォルダーにある既定のファイルを置き換えます。
 

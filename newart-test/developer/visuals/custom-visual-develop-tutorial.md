@@ -16,7 +16,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 10/16/2019
 ms.locfileid: "72424481"
 ---
-# <a name="tutorial-developing-a-power-bi-visual"></a>チュートリアル:Power BI のビジュアルを開発する
+# <a name="tutorial-developing-a-power-bi-visual"></a>チュートリアル: Power BI ビジュアルの開発
 
 開発者が Power BI に Power BI ビジュアルを簡単に追加して、ダッシュボードとレポートで使用できるようにします。 すぐに始められるように、すべての視覚化のコードが GitHub で公開されています。
 
@@ -89,7 +89,7 @@ Power BI Desktop レポートでは、Circle Card になるようにカードが
 
 3. **[File to Import]\(インポートするファイル\)** 手順で、 *[次へ]* を選択します。
 
-4. **[秘密キーの保護]** 手順で、[パスワード] ボックスに、証明書の作成で受け取ったパスフレーズを貼り付けます。ここでも、パスフレーズは **_15105661266553327_** です。
+4. **秘密キーの保護** の手順で、パスワード ボックスに、証明書の作成時に取得したパスフレーズを貼り付けます。 ここでも、この例では **_15105661266553327_** です。
 
       ![パスフレーズのコピー](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
@@ -97,7 +97,7 @@ Power BI Desktop レポートでは、Circle Card になるようにカードが
 
       ![次のストアにあるすべての証明書](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
 
-6. **[証明書ストアの選択]** ウィンドウで、 **[信頼されたルート証明機関]** を選択して、 *[OK]* をクリックします。 その後、 **[証明書ストア]** 画面で *[次へ]* をクリックします。
+6. **[証明書ストアの選択]** ウィンドウで、 **[信頼されたルート証明機関]** を選択して、 *[OK]* をクリックします。 その後、 *[証明書ストア]* 画面で **[次へ]** をクリックします。
 
       ![信頼されたルート証明書](media/custom-visual-develop-tutorial/trusted-root-cert.png)
 
@@ -313,7 +313,7 @@ PowerShell で実行されるカスタム ビジュアルを停止するため�
 
     このコマンドは、JavaScript ファイルに基づいて TypeScript 定義をインストールします。(JavaScript のスーパーセットである)TypeScript でのカスタム ビジュアルの開発が可能になります。 Visual Studio Code は、TypeScript アプリケーションを開発するための理想的な IDE です。
 
-3. PowerShell で @no__t 0core-js @ no__t をインストールするには、次のコマンドを入力します。
+3. PowerShell に **core-js** をインストールするには、次のコマンドを入力します。
 
     ```powershell
     npm i core-js@3.2.1 --save
@@ -338,9 +338,9 @@ PowerShell で実行されるカスタム ビジュアルを停止するため�
     PS C:\circlecard>
     ```
 
-    このコマンドは、JavaScript 用のモジュール標準ライブラリをインストールします。 これには、最大2019の ECMAScript の polyfills が含まれています。 詳細については、 [`core-js`](https://www.npmjs.com/package/core-js)
+    このコマンドで、JavaScript 用のモジュラー標準ライブラリがインストールされます。 これには、2019 までの ECMAScript のポリフィルが含まれます。 詳細については、[`core-js`](https://www.npmjs.com/package/core-js) を参照してください。
 
-4. PowerShell で @no__t 0powerbi-visual api @ no__t をインストールするには、次のコマンドを入力します。
+4. PowerShell に **powerbi-visual-api** をインストールするには、次のコマンドを入力します。
 
     ```powershell
     npm i powerbi-visuals-api --save-dev
@@ -356,7 +356,7 @@ PowerShell で実行されるカスタム ビジュアルを停止するため�
     PS C:\circlecard>
     ```
 
-    このコマンドにより、Power BI のビジュアル API 定義がインストールされます。
+    このコマンドで、Power BI Visuals API 定義がインストールされます。
 
 5. [Visual Studio Code](https://code.visualstudio.com/) を起動します。
 
@@ -370,7 +370,7 @@ PowerShell で実行されるカスタム ビジュアルを停止するため�
 
     ![Visual Studio Code の D3 ライブラリ](media/custom-visual-develop-tutorial/d3-library.png)
 
-7. No__t の **Explorer ウィンドウで node_modules @types > d3 を展開して、ファイル **index. no__t @ > が追加されていることを確認します。
+7. **[エクスプローラー] ウィンドウ**で node_modules > @types > d3 を展開して、ファイル **index.d.ts** が追加されたことを確認します。
 
     ![Index.d.ts ファイル](media/custom-visual-develop-tutorial/index-d-ts.png)
 
@@ -531,7 +531,7 @@ PowerShell で実行されるカスタム ビジュアルを停止するため�
 
 6. 引き続き、ビジュアルを実行します。
 
-## <a name="process-data-in-the-visual-code"></a>ビジュアルコードのデータを処理する
+## <a name="process-data-in-the-visual-code"></a>ビジュアル コードのデータを処理する
 
 データ ロールとデータ ビューのマッピングを定義して、メジャーの値と表示名を表示するようにカスタム ビジュアル ロジックを変更します。
 
@@ -597,11 +597,11 @@ PowerShell で実行されるカスタム ビジュアルを停止するため�
 
     ![切り替えて戻る](media/custom-visual-develop-tutorial/show-dataview-toolbar-revert.png)
 
-### <a name="consume-data-in-the-visual-code"></a>ビジュアルコードのデータを使用する
+### <a name="consume-data-in-the-visual-code"></a>ビジュアル コードのデータを使用する
 
-1. @No__t 0Visual Studio Code @ no__t-1 で、**visual. ts @ no__t ファイルに
+1. **Visual Studio Code** の、**visual.ts** ファイルで
 
-    `powerbi` モジュールから `DataView` インターフェイスをインポートします
+    `DataView` モジュールから `powerbi` インターフェイスをインポートし、
 
     ```typescript
     import DataView = powerbi.DataView;
